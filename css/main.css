@@ -25,5 +25,138 @@ body {
 }
 .block {
     height: 200px;
-    background-color: grey;
+    background-color: var(--secondary);
+}
+/* Header */
+.header {
+    padding-top: 44px;
+    position: relative;
+    min-height: 940px;
+    color: #fff;
+    background: linear-gradient(132.05deg, #428E5F -17.38%, #112120 78.4%), #204434;
+}
+.header a {
+    color: inherit;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 96px;
+    background-size: 100%;
+    background-image: url(./../img/header/header-bottom.svg);
+}
+.header_top {
+    margin-bottom: 86px;
+}
+.header_row {
+    display: flex;
+
+}
+.header_content {
+    max-width: 592px;
+}
+.header_img {
+
+}
+.header_img img {
+    max-width: unset;
+    width: 894px;
+    height: 940px;
+}
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    align-items: center;
+}
+.nav_list {
+    display: flex;
+    column-gap: 80px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.nav_list a {
+    position: relative;
+}
+.nav_list a.active::after,
+.nav_list a:hover::after {
+    content: "";
+    display: block;
+    /* width: 35px; */
+    height: 4px;
+    background-color: #C4C4C4;
+    position: absolute;
+    right: 10px;
+    left: 0;
+    bottom: -6px;
+    border-radius: 100px;
+}
+.nav_login {
+    display: flex;
+    column-gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 100px;
+    padding: 13px 44px;
+    color: #fff;
+}
+.btn:hover {
+    color: rgb(223, 238, 146);
+    transition: color 0.2s ease-in;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+.logo {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* Header content */
+.header_badge {
+    font-size: 18px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 11px 30px;
+    display: inline-block;
+    margin-bottom: 7px;
+}
+.header_title {
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.header_text {
+    margin-bottom: 68px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
+.header_btn {
+    padding: 27px 48px;
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px; 
+}
+.header_btn:hover {
+    color: rgb(223, 238, 146);
+    transition: color 0.2s ease-in;
+}
+.header_btn:active {
+    position: relative;
+    top: 1px;
 }
