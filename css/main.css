@@ -29,6 +29,7 @@ body {
 }
 /* Header */
 .header {
+    overflow: hidden;
     padding-top: 44px;
     position: relative;
     min-height: 940px;
@@ -57,11 +58,17 @@ body {
 }
 .header_content {
     max-width: 592px;
+    position: relative;
+    z-index: 1;
 }
 .header_img {
-
+    position: relative;
+    flex-grow: 1;
 }
 .header_img img {
+    position: absolute;
+    top: -181px;
+    right: -87px;
     max-width: unset;
     width: 894px;
     height: 940px;
