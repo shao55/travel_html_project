@@ -19,7 +19,7 @@ body {
     padding: 0 var(--container-padding);
     margin: 0 auto;
 }
-/* Нестандартный контейнер, уходящий справа до конца */
+/* Нестандартный контейнер, уходящий направо до конца */
 .container-right {
     padding-left: calc( (100% - var(--container-width))/2 + var(--container-padding) );
 }
@@ -152,7 +152,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 .header_btn {
-    padding: 27px 48px;
+    padding: 13px 44px;
     font-size: 25px;
     font-weight: 600;
     display: inline-block;
@@ -166,4 +166,59 @@ body {
 .header_btn:active {
     position: relative;
     top: 1px;
+}
+/* Секция Destinations */
+.destinations {
+    padding: 96px 0 100px;
+    overflow-x: hidden;
+}
+.destinations_row {
+    display: flex;
+    column-gap: 50px;
+}
+.destinations_content {
+    max-width: 456px;
+}
+.destinations_slider {
+    width: 1110px;
+    flex-shrink: 0;
+}
+.destinations_title {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.destinations_title span {
+    font-size: 30px;
+}
+.destinations_text {
+    margin-bottom: 60px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+/* Универсальная кнопка */
+.btn_uni {
+    color: #fff;
+    padding: 25px 45px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px; 
+}
+.btn_uni:hover {
+    color: rgb(223, 238, 146);
+    transition: color 0.2s ease-in;
+}
+.btn_uni:active {
+    position: relative;
+    top: 1px;
+}
+/* Слайдер */
+.slider {
+
+}
+.slider_item {
+    
 }
