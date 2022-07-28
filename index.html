@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel project</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -64,14 +66,56 @@
                     </div>
                     <div class="destinations_slider">
                         <div class="slider">
-                            <img class="slider_item" src="./img/slider/03.jpg" alt="Slider Item">
-                            <img class="slider_item" src="./img/slider/01.jpg" alt="Slider Item">
-                            <img class="slider_item" src="./img/slider/02.jpg" alt="Slider Item">
+                            <div class="owl-carousel">
+                                <img class="slider_item" src="./img/slider/03.jpg" alt="Slider Item">
+                                <img class="slider_item" src="./img/slider/01.jpg" alt="Slider Item">
+                                <img class="slider_item" src="./img/slider/02.jpg" alt="Slider Item">
+                            </div>
+                            <button class="slider-btn slider-btn--prev">
+                                <img src="./img/slider/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider-btn slider-btn--next">
+                                <img src="./img/slider/arrow-right.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customers">
+            <div class="container">
+                <div class="customers_row">
+                    <div class="customers_img">
+                        <img src="./img/customers/customers.jpg" alt="Customer">
+                    </div>
+                    <div class="customers_content">
+                        <h2 class="customers_title">
+                            What do customers say about us?
+                        </h2>
+                        <div class="review">
+                            <div class="review_client">
+                                <div class="review_client-avatar">
+                                    <img src="./img/customers/user-avatar.png" alt="Avatar">
+                                </div>
+                                <div class="review_client-desc">
+                                    <h3 class="review_client-desc-name">Alpanasap</h3>
+                                    <p class="review_client-desc-country">Japung, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="review_text">
+                                <p>Very satisfying service makes it comfortable, a beautiful place in the world.</p>  
+                            </div>
+                            <div class="review_rating">
+                                <img src="./img/customers/stars-rating.svg" alt="Rating">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
