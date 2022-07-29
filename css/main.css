@@ -101,6 +101,10 @@ body {
     bottom: -6px;
     border-radius: 100px;
 }
+.nav_list.nav_list--footer a.active::after,
+.nav_list.nav_list--footer a.hover::after {
+    display: none;
+}
 .nav_login {
     display: flex;
     column-gap: 25px;
@@ -130,6 +134,12 @@ body {
     font-size: 20px;
     font-weight: 700;
 }
+.logo a {
+    color: inherit !important;
+}
+.logo--footer {
+    color: #FF7C4E;
+}
 /* Header content */
 .header_badge {
     font-size: 18px;
@@ -151,7 +161,7 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 .header_btn {
-    padding: 13px 44px;
+    padding: 27px 48px;
     font-size: 25px;
     font-weight: 600;
     display: inline-block;
@@ -305,4 +315,98 @@ body {
 .review_client-desc-country {
     font-size: 25px;
     color: var(--secondary);
+}
+/* Call to action */
+.cta {
+    padding: 100px 0;
+}
+.cta_plate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 60px;
+    min-height: 580px;
+    padding: 40px 15px;
+}
+.cta_plate::before,
+.cta_plate::after {
+    position: absolute;
+    width: 63px;
+    height: 83px;
+    content: "";
+}
+.cta_plate::before {
+    left: 74px;
+    bottom: 56px;
+    background-image: url("./../img/cta/cta-el-01.svg");
+}
+.cta_plate::after {
+    top: 74px;
+    right: 80px;
+    background-image: url("./../img/cta/cta-el-02.svg");
+}
+.cta_title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 68px;
+    text-align: center;
+    color: #0F1F1C;
+    padding-bottom: 30px;
+}
+.cta_text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: var(--secondary);
+    margin-bottom: 60px;
+}
+/* Subscribe */
+.subscribe {
+    padding: 35px 0 50px;
+}
+.subscribe_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.subscribe_title {
+    margin-bottom: 60px;
+    max-width: 494px;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+}
+.subscribe_form {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #C4C4C4;
+    border-radius: 35px;
+    padding: 12px 15px 12px 46px;
+}
+.subscribe-form_input {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+.subscribe-form_input::placeholder {
+    color: var(--secondary);
+}
+.subscribe-form_btn {
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #FFFFFF;
+    border-radius: 35px;
+    padding: 34px 87px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 38px;
+    color: #fff;
+    margin-left: 191px; 
+}
+/* Footer */
+.footer {
+    padding: 106px 0 74px;
+}
+.footer a {
+    color: var(--secondary);    
 }
