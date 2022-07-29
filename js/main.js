@@ -1,3 +1,4 @@
+// Карусель
 const owl = $('.owl-carousel');
 owl.owlCarousel({
     center: true,
@@ -14,3 +15,7 @@ $('.slider-btn--prev').click(function() {
 $('.slider-btn--next').click(function() {
     owl.trigger('next.owl.carousel');
 });
+// Кнопка навигации
+document.querySelector('.menu-icon-wrapper').onclick = function(){
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+}
