@@ -15,7 +15,12 @@ $('.slider-btn--prev').click(function() {
 $('.slider-btn--next').click(function() {
     owl.trigger('next.owl.carousel');
 });
+
 // Кнопка навигации
-document.querySelector('.menu-icon-wrapper').onclick = function(){
-    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-}
+const nav_btn = document.querySelector(".nav_toggle");
+const menu_icon = document.querySelector(".menu-icon");
+// При клике на объект с классом .nav_toggle
+nav_btn.onclick = function(){
+    // Запускается функция с тогглом menu-icon-active
+    menu_icon.classList.toggle('menu-icon-active');
+};

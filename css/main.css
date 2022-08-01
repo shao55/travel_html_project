@@ -100,7 +100,7 @@ body {
     right: 10px;
     left: 0;
     bottom: -6px;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 .nav_list.nav_list--footer a.active::after,
 .nav_list.nav_list--footer a.hover::after {
@@ -150,6 +150,7 @@ body {
     padding: 11px 30px;
     display: inline-block;
     margin-bottom: 7px;
+    border-radius: 15px;
 }
 .header_title {
     font-size: 55px;
@@ -422,14 +423,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .menu-icon {
   position: relative;
   width: 30px;
   height: 5px;
   background-color: #fff;
 }
-
 .menu-icon::before {
   position: absolute;
   left: 0;
@@ -441,7 +440,6 @@ body {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 
 }
-
 .menu-icon::after {
   position: absolute;
   left: 0;
@@ -453,17 +451,14 @@ body {
   transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 
 }
-
 .menu-icon.menu-icon-active {
   background-color: transparent;
 }
-
 .menu-icon.menu-icon-active::before {
   transform: rotate(45deg);
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
-
 .menu-icon.menu-icon-active::after {
   transform: rotate(-45deg);
   top: 0;
@@ -484,5 +479,8 @@ body {
     }
     .nav_toggle {
         display: block;
+    }
+    .nav_mobile {
+        position: fixed;
     }
 }
