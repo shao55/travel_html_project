@@ -473,6 +473,12 @@ body {
         padding-left: 15px;
     }
 }
+
+@media (max-width: 1200px) {
+    .destinations_slider {
+        width: 900px;
+}
+
 @media (max-width: 1000px) {
     .nav_list {
         display: none;
@@ -525,13 +531,33 @@ body {
     .header_img img {
         right: -256px;
     }
+    .slider .slider_item {
+        margin-top: 18px;
+        width: 223px;
+        height: 268px;
+    }
+    .slider .center .slider_item {
+        margin-top: 0;
+        width: 253 px;
+        height: 304px;
+    }
+    .slider {
+        height: 304px;
+    }
 }
+
 @media (max-width: 850px) {
     .header_row {
         flex-direction: column;
     }
+    .header_img {
+        display: flex;
+        justify-content: center;
+    }
     .header_img img {
         position: static;
+        width: 70%;
+        height: auto;
     }
     .header_title {
         margin-bottom: 20px;
@@ -540,5 +566,65 @@ body {
     .header_text {
         font-size: 20px;
         margin-bottom: 40px;
+        max-width: 400px;
+    }
+    .header_badge {
+        margin-bottom: 5px;
+        padding: 8px 20px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    .header_btn {
+        padding: 20px 30px;
+        border-radius: 18px;
+        font-size: 20px;
+    }
+    .header {
+        padding-top: 15px;
+        min-height: unset;
+    }
+    .header_top {
+        margin-bottom: 40px;
+    }
+    .destinations_row {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .destinations_slider {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .slider {
+        height: 304px;
+    }
+}   
+
+@media (max-width: 750px) {
+    .destinations_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .destinations_row {
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .nav_mobile .nav_toggle {
+        right: 20px;
+    }
+    .nav_mobile .nav_list,
+    .nav_mobile .nav_login {
+        row-gap: 20px;
+    }
+    .destinations_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
